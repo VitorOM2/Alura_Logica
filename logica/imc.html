@@ -21,19 +21,19 @@
     
     function verifica(imc){
         if (imc < 18.5){
+            mostra("Seu IMC é: " + imc)
             mostra("Seu IMC está abaixo do esperado")
         }
         if (imc >= 35){
+            mostra("Seu IMC é: " + imc)
             mostra("Seu IMC está acima do esperado")
         }
         if (imc >= 18.5 && imc < 35){
+            mostra("Seu IMC é: " + imc)
             mostra("Seu IMC está excelente")
         }
     }
-    imc = calculaImc();
-    mostra("Seu IMC é: " + imc)
-    verifica(imc)
-
-    
+   
+    verifica(calculaImc())
 
 </script>
