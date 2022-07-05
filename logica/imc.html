@@ -9,7 +9,7 @@
 
     function mostra(frase) {
         document.write(frase)
-        pulaLinha
+        pulaLinha()
     }
 
     function calculaImc(altura, peso){
@@ -19,8 +19,18 @@
         return peso / (altura * altura);
     }
 
-    var meuImc = calculaImc(1.65, 73);
+    var imc = calculaImc(1.65, 73);
 
-    mostra(meuImc)
+    mostra(imc)
+
+    if (imc < 18.5){
+        mostra("Seu IMC está abaixo do esperado")
+    }
+    if (imc >= 35){
+        mostra("Seu IMC está acima do esperado")
+    }
+    if (imc >= 18.5 && imc < 35){
+        mostra("Seu IMC está excelente")
+    }
 
 </script>
