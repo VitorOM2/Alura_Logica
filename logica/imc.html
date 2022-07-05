@@ -2,6 +2,10 @@
 
 <script>
 
+    var peso        = 73
+    var altura      = 1.65
+    var calculaImc  = peso / (altura * altura);
+
     function pulaLinha() {
         document.write("<br>");
         document.write("<br>");
@@ -11,5 +15,7 @@
         document.write(frase)
         pulaLinha
     }
+
+    mostra("O imc é: " + calculaImc);
 
 </script>
