@@ -13,10 +13,11 @@
     }
 
     function calculaImc(altura, peso){
-        imc  = peso / (altura * altura);
-        mostra("O imc calculado é: " + imc)
+        return peso / (altura * altura);
     }
 
-    calculaImc(1.65, 70)
+    var meuImc = calculaImc(1.65, 73);
+
+    mostra(meuImc)
 
 </script>
